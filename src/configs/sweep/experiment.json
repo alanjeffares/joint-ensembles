@@ -1,0 +1,9 @@
+{
+    "dataset": "CIFAR-10",
+    "base_learner": "ResNet18",
+    "num_learners": 5,
+    "seeds": [0, 1, 2, 3, 4],
+    "beta_vals": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
+    "probs": false,
+    "device": "cuda"
+}

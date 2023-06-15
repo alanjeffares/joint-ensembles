@@ -1,0 +1,9 @@
+{
+    "dataset": "ImageNet",
+    "base_learner": "MobileViT_IN",
+    "num_learners": 3,
+    "seeds": [0],
+    "beta_vals": [0.0, 1.0],
+    "probs": true,
+    "device": "cuda"
+}

@@ -1,0 +1,15 @@
+{
+    "CIFAR-10": {
+        "num_classes": 10
+    },
+    "CIFAR-100": {
+        "num_classes": 100
+    },
+    "SVHN": {
+        "num_classes": 10
+    },
+    "ImageNet": {
+        "num_classes": 1000,
+        "num_workers": 4
+    }
+}

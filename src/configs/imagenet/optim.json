@@ -1,0 +1,13 @@
+{
+    "optimiser": "SGD",
+    "scheduler": "ExponentialLR",
+    "learning_rate": 0.5,
+    "factor": false,
+    "momentum": 0.9,
+    "weight_decay": 1e-7,
+    "gamma": 0.2,
+    "lr_switch": 6,
+    "batch_size": 32,
+    "num_epochs": 1000,
+    "max_patience": 15
+}

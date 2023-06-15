@@ -1,0 +1,8 @@
+{
+    "datasets": ["CIFAR-10", "CIFAR-100", "SVHN", "ImageNet"],
+    "base_learners": ["ResNet18", "ResNet34", "VGG", "CNN", "ResNet18_IN", "ResNet34_IN", "SqueezeNet_IN",
+    "DenseNet_IN", "ShuffleNet_IN", "MobileNet_IN", "MobileViT_IN"],
+    "probs": [true, false],
+    "optimisers": ["SGD", "Adam", "RMSprop"],
+    "schedulers": ["ExponentialLR", "Linear", null]
+}

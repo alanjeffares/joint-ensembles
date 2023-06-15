@@ -1,0 +1,6 @@
+# This is an empty folder used to store experimental results.
+
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
