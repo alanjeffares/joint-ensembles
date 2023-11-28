@@ -63,10 +63,12 @@ After the experiment is complete the results can be found in the `results/` fode
 If you use this code, please cite the associated paper.
 
 ```
-@article{jeffares2023joint,
+@inproceedings{
+  jeffares2023joint,
   title={Joint Training of Deep Ensembles Fails Due to Learner Collusion},
-  author={Jeffares, Alan and Liu, Tennison and Crabb{\'e}, Jonathan and van der Schaar, Mihaela},
-  journal={arXiv preprint arXiv:2301.11323},
-  year={2023}
-}
+  author={Alan Jeffares and Tennison Liu and Jonathan Crabb{\'e} and Mihaela van der Schaar},
+  booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+  year={2023},
+  url={https://openreview.net/forum?id=WpGLxnOWhn}
+  }
 ```
