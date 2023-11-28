@@ -50,7 +50,7 @@ After the experiment is complete the results can be found in the `results/` fode
 
 Download and process the ImageNet data following the instructions from [this blog post](https://towardsdatascience.com/downloading-and-using-the-imagenet-dataset-with-pytorch-f0908437c4be). Then set the path to the folder in which the data is stored in `src/configs/data.json`.
 
-Next, select the configuration of experiment. The high-level experimental parameters are set in `src/configs/imagenet/experiment.json` and the more fine-grained optimization hyperparameters are set in `src/configs/imagenet/optim.json`. The values implemented for the arguments that the user might wish to change are listed in `src/tests/implemented.json`.
+Next, select the configuration of experiment. The high-level experimental parameters are set in `src/configs/imagenet/experiment.json` and the more fine-grained optimization hyperparameters are set in `src/configs/imagenet/optim.json`. The values implemented for the arguments that the user might wish to change are listed in [`src/tests/implemented.json`](https://github.com/alanjeffares/joint-ensembles/blob/master/src/tests/implemented.json).
 
 Once the configs are set, the experiment can be run with the following command (where `<tag>` is an optional keyword to save the experiment under).
 ```
