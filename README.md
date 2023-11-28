@@ -32,31 +32,31 @@ Then install the repository requirements.
 pip install -r requirements.txt
 ```
 
-Then the experiements are split across two files. `src/sweep.py` runs the experiments that sweep across values of $\beta$ from the augmented objective in Sec. 5. `src/imagenet.py` runs the ImageNet experiments reported in Table 1. 
+Then the experiments are split across two files. `src/sweep.py` runs the experiments that sweep across values of $\beta$ from the augmented objective in Sec. 5. `src/imagenet.py` runs the ImageNet experiments reported in Table 1. 
 
 **Sweep**
 
 Set the path to the folder in which the data is stored (or should be downloaded to) in `src/configs/data.json`.
 
-Next, select the configuration of experiment. The high-level experimental parameters are set in `src/configs/sweep/experiment.json` and the more fine-grained optimization hyperparameters are set in `src/configs/sweep/optim.json`. The values implemented for the arguments that the user might wish to change are listed in `src/tests/implemented.json`.
+Next, select the configuration of the experiment. The high-level experimental parameters are set in `src/configs/sweep/experiment.json` and the more fine-grained optimization hyperparameters are set in `src/configs/sweep/optim.json`. The values implemented for the arguments that the user might wish to change are listed in `src/tests/implemented.json`.
 
 Once the configs are set, the experiment can be run with the following command (where `<tag>` is an optional keyword to save the experiment under).
 ```
 python src/sweep.py <tag>
 ```
-After the experiment is complete the results can be found in the `results/` foder.
+After the experiment is complete the results can be found in the `results/` folder.
 
 **ImageNet**
 
 Download and process the ImageNet data following the instructions from [this blog post](https://towardsdatascience.com/downloading-and-using-the-imagenet-dataset-with-pytorch-f0908437c4be). Then set the path to the folder in which the data is stored in `src/configs/data.json`.
 
-Next, select the configuration of experiment. The high-level experimental parameters are set in `src/configs/imagenet/experiment.json` and the more fine-grained optimization hyperparameters are set in `src/configs/imagenet/optim.json`. The values implemented for the arguments that the user might wish to change are listed in [`src/tests/implemented.json`](https://github.com/alanjeffares/joint-ensembles/blob/master/src/tests/implemented.json).
+Next, select the configuration of the experiment. The high-level experimental parameters are set in `src/configs/imagenet/experiment.json` and the more fine-grained optimization hyperparameters are set in `src/configs/imagenet/optim.json`. The values implemented for the arguments that the user might wish to change are listed in [`src/tests/implemented.json`](https://github.com/alanjeffares/joint-ensembles/blob/master/src/tests/implemented.json).
 
 Once the configs are set, the experiment can be run with the following command (where `<tag>` is an optional keyword to save the experiment under).
 ```
 python src/imagenet.py <tag>
 ```
-After the experiment is complete the results can be found in the `results/` foder.
+After the experiment is complete the results can be found in the `results/` folder.
 
 ### Citation
 
