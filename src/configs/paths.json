@@ -1,7 +1,5 @@
 {
-    "data_2": "../../../mnt/data/aj659.data/",
-    "data_3": "../../../mnt/data/aj659.data/imagenet/",
-    "data": "../imagenet_data/",
+    "data": "path/to/data/",
     "models": "models",
     "results": "results"
 }
