@@ -32,7 +32,7 @@ Then install the repository requirements.
 pip install -r requirements.txt
 ```
 
-Then the experiments are split across two files. `src/sweep.py` runs the experiments that sweep across values of $\beta$ from the augmented objective in Sec. 5. `src/imagenet.py` runs the ImageNet experiments reported in Table 1. 
+Then the experiments are split across three files. `src/sweep.py` runs the experiments that sweep across values of $\beta$ from the augmented objective in Sec. 5. `src/imagenet.py` runs the ImageNet experiments reported in Table 1. `src/diagnostics.ipynb` is a notebook containing the three diagnostic experiments (1) Diversity explosion; (2) Debiased diversity; (3) Learner codependence. 
 
 **Sweep**
 
@@ -57,6 +57,16 @@ Once the configs are set, the experiment can be run with the following command (
 python src/imagenet.py <tag>
 ```
 After the experiment is complete the results can be found in the `results/` folder.
+
+**Diagnostics**
+
+Download the results of the Bayesian optimization sweep from [the following link](https://drive.google.com/drive/folders/1WN8uEkxRbyV5DAnJuZWfvAN0BRyJkbLl?usp=sharing).
+
+Then simply run the cells in `src/diagnostics.ipynb` corresponding to each of the three post-hoc experiments.
+
+**Plotting**
+
+A plotting notebook is provided in `src/plotting/generate_figure.ipynb` illustrating how the outputs of *sweep* and *ImageNet* experiments can be plotted. 
 
 ### Citation
 
